@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exploring Git Commands through Collaborative Coding</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            line-height: 1.6;
+        }
+        h1, h2 {
+            color: #333;
+        }
+        code {
+            background-color: #f4f4f4;
+            padding: 5px;
+            border-radius: 5px;
+        }
+        pre {
+            background: #eee;
+            padding: 10px;
+            border-radius: 5px;
+            overflow-x: auto;
+        }
+    </style>
+</head>
+<body>
+    <h1>Exploring Git Commands through Collaborative Coding</h1>
+    
+    <h2>1. Setup and Initialization</h2>
+    <p>Install and configure Git:</p>
+    <pre><code>git config --global user.name "Your Name"
+git config --global user.email "your.email@example.com"</code></pre>
+    
+    <p>Create a new repository:</p>
+    <pre><code>git init collaborative-project
+cd collaborative-project</code></pre>
+    
+    <h2>2. Creating and Committing Files</h2>
+    <p>Create a new file and commit changes:</p>
+    <pre><code>git add .
+git commit -m "Initial commit with project setup"</code></pre>
+    
+    <h2>3. Working with Remote Repositories</h2>
+    <p>Connect to a remote repository and push changes:</p>
+    <pre><code>git remote add origin &lt;repository_url&gt;
+git push -u origin main</code></pre>
+    
+    <h2>4. Branching and Feature Development</h2>
+    <p>Create and switch to a new branch:</p>
+    <pre><code>git branch feature-xyz
+git checkout feature-xyz</code></pre>
+    
+    <h2>5. Collaboration and Pull Requests</h2>
+    <p>Push a new branch and create a pull request:</p>
+    <pre><code>git push origin feature-xyz</code></pre>
+    
+    <h2>6. Handling Merge Conflicts</h2>
+    <p>Resolve conflicts and commit:</p>
+    <pre><code>git add &lt;conflicted_file&gt;
+git commit -m "Resolved merge conflict"</code></pre>
+    
+    <h2>7. Synchronization and Updates</h2>
+    <p>Pull the latest changes from the main branch:</p>
+    <pre><code>git pull origin main</code></pre>
+    
+    <h2>8. Best Practices</h2>
+    <ul>
+        <li>Write meaningful commit messages.</li>
+        <li>Use <code>.gitignore</code> to exclude unnecessary files.</li>
+        <li>Work on feature branches instead of <code>main</code>.</li>
+        <li>Review code before merging.</li>
+    </ul>
+</body>
+</html>
